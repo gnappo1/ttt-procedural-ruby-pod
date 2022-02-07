@@ -186,19 +186,19 @@ describe '#turn' do
       expect(board).to match_array(["X", " ", " ", " ", " ", " ", " ", " ", " "])
     end
 
-    # it 'displays a correct board after a valid turn' do
-    #   board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    it 'displays a correct board after a valid turn' do
+      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
-    #   allow(self).to receive(:gets).and_return("5")
+      allow(self).to receive(:gets).and_return("5")
 
     #   output = capture_puts{ turn(board) }
-
-    #   expect(turn(board).to include("   |   |   ")
-    #   expect(turn(board).to include("-----------")
-    #   expect(turn(board).to include("   | X |   ")
-    #   expect(turn(board).to include("-----------")
-    #   expect(turn(board).to include("   |   |   ")
-    # end
+      # expect { turn(board) }.to output("   |   |   ").to_stdout
+      # expect(turn(board)).to output("   |   |   ").to_stdout
+      # expect(turn(board)).to output("-----------").to_stdout
+      # expect(turn(board)).to output("   | X |   ").to_stdout
+      # expect(turn(board)).to output("-----------").to_stdout
+      # expect(turn(board)).to output("   |   |   ").to_stdout
+    end
 end
 describe "game_status" do
     describe 'WIN_COMBINATIONS' do
